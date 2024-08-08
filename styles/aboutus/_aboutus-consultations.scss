@@ -1,0 +1,144 @@
+.consultations-wrapper {
+  position: relative;
+  top: -110px;
+
+  @media (max-width: 440px) {
+    top: -70px;
+  }
+}
+
+.consultations-block {
+  display: flex;
+  margin: 0px auto;
+  width: 80%;
+  height: fit-content;
+  color: white;
+  font-family: Arial, sans-serif;
+
+  .left-cons-block {
+    max-width: 580px;
+    padding: 70px;
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+
+    .cons-title {
+      font-size: 60px;
+      font-weight: 700;
+    }
+  }
+
+  .right-cons-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    margin: 20px 0px;
+    background: #ffffff;
+    min-width: calc(100% - 580px);
+    box-shadow: 4px 3px 14px rgba(0, 0, 0, 1);
+
+    .advantage {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .advantage-title {
+        display: flex;
+        gap: 15px;
+        align-items: start;
+        color: purple;
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .advantage-text {
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        color: black;
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .left-cons-block {
+      padding: 60px;
+      gap: 35px;
+
+      .cons-title {
+        font-size: 54px;
+      }
+    }
+
+    .right-cons-block {
+      padding: 30px;
+
+      .advantage {
+        gap: 15px;
+
+        .advantage-title {
+          font-size: 20px;
+          gap: 10px;
+          align-items: center;
+
+          .checkmark {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-self: self-start;
+          }
+        }
+
+        .advantage-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1140px) {
+    flex-direction: column;
+    width: 90%;
+
+    .left-cons-block {
+      max-width: 100%;
+      max-height: fit-content;
+      padding: 60px;
+    }
+
+    .right-cons-block {
+      margin: 0;
+      gap: 0;
+
+      .advantage {
+        .advantage-text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .left-cons-block {
+      padding: 30px;
+      .cons-title {
+        font-size: 26px;
+      }
+
+      .cons-left-text {
+        font-size: 16px;
+      }
+    }
+
+    .right-cons-block {
+      gap: 0;
+      .advantage {
+        gap: 10px;
+
+        .advantage-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

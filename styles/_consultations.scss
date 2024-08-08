@@ -1,0 +1,180 @@
+.consultations-wrapper {
+  position: relative;
+  top: -110px;
+}
+
+.consultations-block {
+  display: flex;
+  margin: 0px auto;
+  width: 80%;
+  height: fit-content;
+  color: white;
+  font-family: Arial, sans-serif;
+
+  .left-cons-block {
+    max-width: 580px;
+    padding: 70px;
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .cons-title {
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .cons-left-text {
+      font-size: 18px;
+    }
+  }
+
+  .right-cons-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    margin: 20px 0px;
+    background: #ffffff;
+    min-width: calc(100% - 580px);
+    box-shadow: 4px 3px 14px rgba(0, 0, 0, 1);
+
+    .advantage {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .advantage-title {
+        display: flex;
+        gap: 15px;
+        align-items: start;
+        color: purple;
+        font-size: 22px;
+        font-weight: bold;
+
+        .checkmark {
+          width: 22px;
+          height: 22px;
+        }
+      }
+
+      .advantage-text {
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        color: black;
+      }
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .left-cons-block {
+      padding: 60px;
+      gap: 35px;
+
+      .cons-title {
+        font-size: 54px;
+      }
+    }
+
+    .right-cons-block {
+      padding: 30px;
+
+      .advantage {
+        gap: 15px;
+
+        .advantage-title {
+          font-size: 20px;
+          gap: 10px;
+          align-items: center;
+
+          .checkmark {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-self: self-start;
+          }
+        }
+
+        .advantage-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1140px) {
+    flex-direction: column;
+    width: 90%;
+
+    .left-cons-block {
+      max-width: 100%;
+      max-height: fit-content;
+      padding: 60px;
+    }
+
+    .right-cons-block {
+      margin: 0;
+      gap: 0;
+
+      .advantage {
+        .advantage-title {
+          font-size: 24px;
+
+          .checkmark {
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        .advantage-text {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .left-cons-block {
+      padding: 30px;
+      .cons-title {
+        font-size: 26px;
+      }
+
+      .cons-left-text {
+        font-size: 16px;
+      }
+    }
+
+    .right-cons-block {
+      gap: 20px;
+      .advantage {
+        gap: 10px;
+        .advantage-title {
+          font-size: 20px;
+
+          .checkmark {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .advantage-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 440px) {
+    margin-top: 50px;
+
+    .right-cons-block {
+      padding: 20px 15px;
+
+      .advantage {
+        gap: 10px;
+        .advantage-title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
