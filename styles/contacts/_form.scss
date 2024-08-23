@@ -37,6 +37,12 @@
       background: #fff;
       border-radius: 10px;
       color: purple;
+      transition: all 0.3s;
+    }
+
+    #submit:hover {
+      background: purple;
+      color: #fff;
     }
   }
 

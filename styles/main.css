@@ -585,12 +585,10 @@ a {
   }
 }
 
-.answers-wrapper {
-  margin-bottom: 980px;
-}
 .answers-wrapper .answers-block {
   position: relative;
   display: flex;
+  flex-direction: column;
 }
 .answers-wrapper .answers-block .answers-img-block {
   position: absolute;
@@ -599,10 +597,8 @@ a {
   z-index: 2;
 }
 .answers-wrapper .answers-block .answers-text-block {
-  position: absolute;
+  align-self: flex-end;
   width: 80%;
-  top: 0;
-  right: 0;
   background: purple;
   z-index: 1;
   padding: 80px 110px 80px;
@@ -622,10 +618,9 @@ a {
   line-height: 50px;
 }
 .answers-wrapper .answers-block .answers-btn-block {
-  margin: 70px 41.8%;
-  border: 1px solid black;
+  display: flex;
+  margin: 50px auto 100px auto;
   justify-content: center;
-  align-items: center;
 }
 .answers-wrapper .answers-block .answers-btn {
   border: 1px solid rgb(86, 0, 86);
@@ -635,7 +630,6 @@ a {
   color: #fff;
   transition: all 0.3s;
   font-weight: 700;
-  margin-top: 900px;
   cursor: pointer;
   position: absolute;
 }
@@ -659,9 +653,6 @@ a {
   .answers-wrapper .answers-block .answers-title {
     font-size: 38px;
   }
-  .answers-wrapper .answers-block .answers-btn {
-    margin-top: 960px;
-  }
 }
 @media (max-width: 1140px) {
   .answers-wrapper .answers-block .answers-img-block {
@@ -683,12 +674,6 @@ a {
   .answers-wrapper .answers-block .answers-text-block .answers-title {
     font-size: 38px;
   }
-  .answers-wrapper .answers-block .answers-btn-block {
-    margin-bottom: 240px;
-  }
-  .answers-wrapper .answers-block .answers-btn-block .answers-btn {
-    margin-top: 1050px;
-  }
 }
 @media (max-width: 960px) {
   .answers-wrapper .answers-block .answers-img-block {
@@ -701,13 +686,6 @@ a {
     -o-object-fit: fill;
        object-fit: fill;
   }
-  .answers-wrapper .answers-block .answers-btn-block {
-    margin-bottom: 300px;
-    margin-left: 33%;
-  }
-  .answers-wrapper .answers-block .answers-btn-block .answers-btn {
-    margin-top: 1150px;
-  }
 }
 @media (max-width: 640px) {
   .answers-wrapper .answers-block .answers-img-block {
@@ -716,27 +694,6 @@ a {
   }
   .answers-wrapper .answers-block .answers-text-block {
     padding-top: 220px;
-  }
-  .answers-wrapper .answers-block .answers-btn-block {
-    margin-bottom: 310px;
-    margin-left: 25%;
-  }
-  .answers-wrapper .answers-block .answers-btn-block .answers-btn {
-    margin-top: 1220px;
-  }
-}
-@media (max-width: 440px) {
-  .answers-wrapper .answers-block .answers-btn-block {
-    margin-left: 5%;
-  }
-}
-@media (max-width: 360px) {
-  .answers-wrapper .answers-block .answers-btn-block {
-    margin-bottom: 520px;
-    margin-left: 0;
-  }
-  .answers-wrapper .answers-block .answers-btn-block .answers-btn {
-    margin-top: 1400px;
   }
 }
 

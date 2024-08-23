@@ -44,22 +44,10 @@
       font-weight: bolder;
     }
 
-    @media (max-width: 1140px) {
-      margin-top: 50px;
-    }
-
-    @media (max-width: 960px) {
-      margin-top: 150px;
-    }
-
     @media (max-width: 640px) {
       .employees-title {
         font-size: 28px;
       }
-    }
-
-    @media (max-width: 440px) {
-      margin-top: 420px;
     }
   }
 

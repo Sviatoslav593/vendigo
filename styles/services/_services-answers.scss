@@ -1,8 +1,8 @@
 .answers-wrapper {
-  margin-bottom: 980px;
   .answers-block {
     position: relative;
     display: flex;
+    flex-direction: column;
 
     .answers-img-block {
       position: absolute;
@@ -12,10 +12,8 @@
     }
 
     .answers-text-block {
-      position: absolute;
+      align-self: flex-end;
       width: 80%;
-      top: 0;
-      right: 0;
       background: purple;
       z-index: 1;
       padding: 80px 110px 80px;
@@ -39,23 +37,6 @@
 
     .answers-btn-block {
       margin: 70px 42%;
-    }
-
-    .answers-btn {
-      border: 1px solid rgb(86, 0, 86);
-      background: purple;
-      padding: 15px 25px;
-      font-size: 18px;
-      color: #fff;
-      transition: all 0.3s;
-      font-weight: 700;
-      margin-top: 900px;
-      cursor: pointer;
-      position: absolute;
-    }
-    .answers-btn:hover {
-      background: #fff;
-      color: purple;
     }
 
     @media (max-width: 1540px) {

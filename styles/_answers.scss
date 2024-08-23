@@ -1,8 +1,8 @@
 .answers-wrapper {
-  margin-bottom: 980px;
   .answers-block {
     position: relative;
     display: flex;
+    flex-direction: column;
 
     .answers-img-block {
       position: absolute;
@@ -12,10 +12,8 @@
     }
 
     .answers-text-block {
-      position: absolute;
+      align-self: flex-end;
       width: 80%;
-      top: 0;
-      right: 0;
       background: purple;
       z-index: 1;
       padding: 80px 110px 80px;
@@ -38,10 +36,9 @@
     }
 
     .answers-btn-block {
-      margin: 70px 41.8%;
-      border: 1px solid black;
+      display: flex;
+      margin: 50px auto 100px auto;
       justify-content: center;
-      align-items: center;
     }
 
     .answers-btn {
@@ -52,7 +49,6 @@
       color: #fff;
       transition: all 0.3s;
       font-weight: 700;
-      margin-top: 900px;
       cursor: pointer;
       position: absolute;
     }
@@ -74,10 +70,6 @@
       }
       .answers-title {
         font-size: 38px;
-      }
-
-      .answers-btn {
-        margin-top: 960px;
       }
     }
 
@@ -105,14 +97,6 @@
           font-size: 38px;
         }
       }
-
-      .answers-btn-block {
-        margin-bottom: 240px;
-
-        .answers-btn {
-          margin-top: 1050px;
-        }
-      }
     }
 
     @media (max-width: 960px) {
@@ -126,15 +110,6 @@
       .answers-img {
         object-fit: fill;
       }
-
-      .answers-btn-block {
-        margin-bottom: 300px;
-        margin-left: 33%;
-
-        .answers-btn {
-          margin-top: 1150px;
-        }
-      }
     }
 
     @media (max-width: 640px) {
@@ -145,31 +120,6 @@
 
       .answers-text-block {
         padding-top: 220px;
-      }
-
-      .answers-btn-block {
-        margin-bottom: 310px;
-        margin-left: 25%;
-        .answers-btn {
-          margin-top: 1220px;
-        }
-      }
-    }
-
-    @media (max-width: 440px) {
-      .answers-btn-block {
-        margin-left: 5%;
-      }
-    }
-
-    @media (max-width: 360px) {
-      .answers-btn-block {
-        margin-bottom: 520px;
-        margin-left: 0;
-
-        .answers-btn {
-          margin-top: 1400px;
-        }
       }
     }
   }
