@@ -1,6 +1,6 @@
 .packets-block {
   margin: 100px auto 50px auto;
-  max-width: 80%;
+  max-width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -77,16 +77,18 @@
       }
 
       .buy-button {
-        background: linear-gradient(
-          0deg,
-          rgba(203, 0, 255, 1) 0%,
-          rgb(160, 0, 178) 100%
-        );
+        background: rgb(201, 0, 201);
+        border: 1px solid purple;
         text-align: center;
         padding: 10px;
         font-size: 22px;
         font-weight: 500;
         color: black;
+      }
+
+      .buy-button:hover {
+        background: purple;
+        color: #fff;
       }
 
       .take-button {
@@ -96,6 +98,12 @@
         font-size: 13px;
         color: #fff;
         font-weight: normal;
+        border: 1px solid black;
+      }
+
+      .take-button:hover {
+        background: #fff;
+        color: purple;
       }
 
       .keep-button {
@@ -105,6 +113,51 @@
         text-align: center;
         padding: 10px;
         font-weight: normal;
+      }
+
+      .keep-button:hover {
+        background: purple;
+        color: #fff;
+      }
+    }
+  }
+
+  .premium-packet {
+    box-shadow: 0px 0px 28px 8px #ffd700;
+
+    .packet-title-block {
+      background: linear-gradient(to top, #ffd700 0%, #c0a200 100%);
+    }
+
+    .packet-price-block {
+      .new-price {
+        color: #b59900;
+      }
+    }
+
+    .packet-buttons-block {
+      .buy-button {
+        background: #ffd700;
+        border: 1px solid #ffd700;
+      }
+
+      .buy-button:hover {
+        background: #bea100;
+        color: #fff;
+      }
+
+      .keep-button {
+        border: 1px solid #ffd700;
+        color: #968000;
+      }
+
+      .keep-button:hover {
+        background: #ffd700;
+        color: #000;
+      }
+
+      .take-button:hover {
+        color: #917b00;
       }
     }
   }

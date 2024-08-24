@@ -850,7 +850,7 @@ a {
 
 .packets-block {
   margin: 100px auto 50px auto;
-  max-width: 80%;
+  max-width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -916,12 +916,17 @@ a {
   letter-spacing: 0.2em;
 }
 .packets-block .packet .packet-buttons-block .buy-button {
-  background: linear-gradient(0deg, rgb(203, 0, 255) 0%, rgb(160, 0, 178) 100%);
+  background: rgb(201, 0, 201);
+  border: 1px solid purple;
   text-align: center;
   padding: 10px;
   font-size: 22px;
   font-weight: 500;
   color: black;
+}
+.packets-block .packet .packet-buttons-block .buy-button:hover {
+  background: purple;
+  color: #fff;
 }
 .packets-block .packet .packet-buttons-block .take-button {
   background: #000;
@@ -930,6 +935,11 @@ a {
   font-size: 13px;
   color: #fff;
   font-weight: normal;
+  border: 1px solid black;
+}
+.packets-block .packet .packet-buttons-block .take-button:hover {
+  background: #fff;
+  color: purple;
 }
 .packets-block .packet .packet-buttons-block .keep-button {
   border: 1px solid purple;
@@ -938,4 +948,36 @@ a {
   text-align: center;
   padding: 10px;
   font-weight: normal;
+}
+.packets-block .packet .packet-buttons-block .keep-button:hover {
+  background: purple;
+  color: #fff;
+}
+.packets-block .premium-packet {
+  box-shadow: 0px 0px 28px 8px #ffd700;
+}
+.packets-block .premium-packet .packet-title-block {
+  background: linear-gradient(to top, #ffd700 0%, #c0a200 100%);
+}
+.packets-block .premium-packet .packet-price-block .new-price {
+  color: #b59900;
+}
+.packets-block .premium-packet .packet-buttons-block .buy-button {
+  background: #ffd700;
+  border: 1px solid #ffd700;
+}
+.packets-block .premium-packet .packet-buttons-block .buy-button:hover {
+  background: #bea100;
+  color: #fff;
+}
+.packets-block .premium-packet .packet-buttons-block .keep-button {
+  border: 1px solid #ffd700;
+  color: #968000;
+}
+.packets-block .premium-packet .packet-buttons-block .keep-button:hover {
+  background: #ffd700;
+  color: #000;
+}
+.packets-block .premium-packet .packet-buttons-block .take-button:hover {
+  color: #917b00;
 }/*# sourceMappingURL=services.css.map */
